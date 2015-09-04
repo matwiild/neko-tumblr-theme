@@ -4,7 +4,7 @@
 <!--
 
 	---------------------
-	ISSUE BY PIXEL LAB
+	UNTITLED BY PIXEL LAB
 	VERSION 1.1
 	---------------------
 	
@@ -15,7 +15,7 @@
 <title>{block:SearchPage}{SearchQuery} / {/block:SearchPage}{block:TagPage}{SearchQuery} / {/block:TagPage}{block:PostSummary}{PostSummary} / {/block:PostSummary}{Title}</title>{block:Description}
 
 <meta name="description" content="{MetaDescription}" />{/block:Description}
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />{block:Hidden}
+<meta name="viewport" content="width=device-width, initial-scale=1.9" />{block:Hidden}
 
 <!-- [COLOR VARIABLES] -->
 <meta name="color:Text" content="#444444" />
@@ -47,7 +47,7 @@
 <meta name="if:Uppercase titles" content="1" />
 <meta name="if:Group additional pages together" content="1" />
 <meta name="if:Enable Infinite Scroll" content="1" />
-<meta name="if:Use high resolution photos" content="0" />
+<meta name="if:Use high resolution photos" content="1" />
 
 <!-- [TEXT VARIABLES] -->
 <meta name="text:Additional pages title" content="" />
@@ -147,9 +147,10 @@ p a:hover, li a:hover {
 		</div>{/block:ShowDescription}
 
 		<ul>{block:AskEnabled}
-			<li><a href="/ask" title="{AskLabel}">{AskLabel}</a></li>{/block:AskEnabled}{block:SubmissionsEnabled}
-			<li><a href="/submit" title="{SubmitLabel}">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
+			
+			
 			<li><a href="/archive" title="{lang:Archive}">{lang:Archive}</a></li>
+			
 			<li><a href="/random" title="{lang:Random post}">{lang:Random}</a></li>{block:IfNotGroupAdditionalPagesTogether}{block:HasPages}{block:Pages}
 			<li><a href="{URL}" title="{Label}">{Label}</a></li>{/block:Pages}{/block:HasPages}{/block:IfNotGroupAdditionalPagesTogether}
 			<li>
@@ -157,6 +158,39 @@ p a:hover, li a:hover {
 					<input name="q" placeholder="{lang:Search}" value="{SearchQuery}" id="search" />
 				</form>
 			</li>
+			<a href="http://www.cyber-cowboy.tumblr.com/">
+  <img src="http://www.ghostrecon.net/forums/public/style_emoticons/default/cowboy.gif" alt="Cyber Cowboy" style="width:20px;height:20px;border:0">
+</a>
+	</li>
+	<p> </p>
+		</li>
+			<a href="http://www.youtube.com/user/MissMatwild">
+  <img src="http://fc08.deviantart.net/fs71/f/2011/258/7/c/music_kitty_gif_by_chocomlknsnkrdoodles-d49w1z7.gif" alt="youtube" style="width:22px;height:22px;border:0">
+</a>
+	</li>
+	<p> </p>
+		</li>
+			<a href="http://www.sumi-no-neko.tumblr.com/ask">
+  <img src="http://www.maggiesensei.com/wp-content/uploads/2011/02/icon_anisakura01.gif" alt="" style="width:28px;height:28px;border:0">
+</a>
+	</li>
+	
+	</li>
+	<p> </p>
+		</li>
+			<a href="http://cfile1.uf.tistory.com/image/2634AA3B51CAEEA62C59D3">
+  <img src="http://fc02.deviantart.net/fs41/f/2009/023/0/f/My_pal_ice_cream_by_smilecakeplz.gif" alt="" style="width:28px;height:28px;border:0">
+</a>
+	</li>
+	
+		</li>
+	<p> </p>
+		</li>
+			<a href="http://www.fuji-fox.tumblr.com">
+  <img src="http://3.bp.blogspot.com/-ZDTTSGokqhs/Ut8-XLVOs_I/AAAAAAAAMVw/CU_QYffrATs/s1600/camera.gif" alt="" style="width:28px;height:28px;border:0">
+</a>
+	</li>
+			
 		</ul>{block:IfGroupAdditionalPagesTogether}{block:HasPages}
 
 		<h6>{block:IfNotAdditionalPagesTitle}{lang:Pages}{/block:IfNotAdditionalPagesTitle}{text:Additional pages title}</h6>
@@ -213,10 +247,10 @@ p a:hover, li a:hover {
 				<div class="read_more"><a href="{Permalink}">{lang:Read more}</a></div>{/block:More}{/block:Description}
 			</div>{/block:Link}{block:Photo}
 			<div class="post_media">
-				{LinkOpenTag}<img {block:IndexPage}src="{block:IfUseHighResolutionPhotos}{PhotoURL-HighRes}{/block:IfUseHighResolutionPhotos}{block:IfNotUseHighResolutionPhotos}{PhotoURL-400}{block:IfNotUseHighResolutionPhotos}" width="{PhotoWidth-400}" height="{PhotoHeight-400}"{/block:IndexPage}{block:PermalinkPage}src="{PhotoURL-HighRes}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}"{/block:PermalinkPage} alt="{PhotoAlt}" class="main_image" />{LinkCloseTag}
+				{LinkOpenTag}<img {block:IndexPage}src="{block:IfUseHighResolutionPhotos}{PhotoURL-400  }{/block:IfUseHighResolutionPhotos}{block:IfNotUseHighResolutionPhotos}{PhotoURL-400}{block:IfNotUseHighResolutionPhotos}" width="{PhotoWidth-400}" height="{PhotoHeight-400}"{/block:IndexPage}{block:PermalinkPage}src="{PhotoURL-HighRes}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}"{/block:PermalinkPage} alt="{PhotoAlt}" class="main_image" />{LinkCloseTag}
 			</div>{/block:Photo}{block:Photoset}
 			<div class="post_media">
-				{block:IndexPage}{block:Photos}<img src="{PhotoURL-400}" width="{PhotoWidth-400}" height="{PhotoHeight-400}" alt="{PhotoAlt}" class="main_image" />{/block:Photos}{/block:IndexPage}{block:PermalinkPage}{Photoset}{/block:PermalinkPage}
+				{block:IndexPage}{block:Photos}<img src="{PhotoURL-600}" width="{PhotoWidth-600}" height="{PhotoHeight-600}" alt="{PhotoAlt}" class="main_image" />{/block:Photos}{/block:IndexPage}{block:PermalinkPage}{Photoset}{/block:PermalinkPage}
 			</div>{/block:Photoset}{block:Video}
 			{block:IndexPage}<div class="post_media"{block:VideoThumbnail} style="background-image:url('{VideoThumbnailURL}')"{/block:VideoThumbnail}>
 				<div class="retro_fuzz"></div>
@@ -225,7 +259,7 @@ p a:hover, li a:hover {
 				{Video-700}
 			</div>{/block:PermalinkPage}{/block:Video}{block:Audio}
 			<div class="post_media">
-				{block:AudioPlayer}<img {block:AlbumArt}src="{AlbumArtURL}" data-default-art-{/block:AlbumArt}src="http://static.tumblr.com/uqie0nv/1vIn5g72i/default_album_art.png" {block:IndexPage}width="400" height="400"{/block:IndexPage}{block:PermalinkPage}width="700" height="700"{/block:PermalinkPage}{block:Album} alt="{Album}"{/block:Album} class="main_image" />{/block:AlbumArt}{/block:AudioPlayer}{block:AudioEmbed}{AudioEmbed-400}{/block:AudioEmbed}
+				{block:AudioPlayer}<img {block:AlbumArt}src="{AlbumArtURL}" data-default-art-{/block:AlbumArt}src="http://static.tumblr.com/uqie0nv/1vIn5g72i/default_album_art.png" {block:IndexPage}width="600" height="600"{/block:IndexPage}{block:PermalinkPage}width="700" height="700"{/block:PermalinkPage}{block:Album} alt="{Album}"{/block:Album} class="main_image" />{/block:AlbumArt}{/block:AudioPlayer}{block:AudioEmbed}{AudioEmbed-600}{/block:AudioEmbed}
 			</div>{/block:Audio}{block:IndexPage}
 
 			<div class="post_information">
@@ -278,5 +312,23 @@ p a:hover, li a:hover {
 		}
 	</script>
 	<script type="text/javascript" src="http://static.tumblr.com/m9ln1jy/N3xnajktr/issue.js"></script>
+	
+	<!-- Start of StatCounter Code for Tumblr -->
+<script type="text/javascript">
+var sc_project=10373097; 
+var sc_invisible=1; 
+var sc_security="664de534"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="tumblr
+statistics" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10373097/0/664de534/1/"
+alt="tumblr statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Tumblr -->
 </body>
 </html>
